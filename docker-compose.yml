@@ -9,17 +9,12 @@ services:
       - ./:/var/www
     ports:
       - "80:80"
-    links:
-      - app
-
   app:
     build:
       context: ./
       dockerfile: app.docker
     volumes:
       - ./:/var/www
-    links:
-      - db
     environment:
       - "DB_PORT=3306"
       - "DB_HOST=db"
