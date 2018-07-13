@@ -48,7 +48,7 @@ Assuming the container name is `lempdockerdemo_app_1` you can SSH into it:
 docker exec -it lempdockerdemo_app_1 bash
 ```
 
-From here you run `artisan` command and other commands such as `phpunit`. However, as it is, you can run `composer` commands from within the container. You can however, either install `composer` in the container or run it from your host machine.
+From here you can run `artisan` command and other commands such as `phpunit`. However, as it is, you cannot run `composer` commands from within the container. You can however, either install `composer` in the container or run it from your host machine.
 
 ### Stopping all running containers
 
